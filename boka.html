@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>boka</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="grid1sec.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <header>
+    <img id="logo" src="building-3446376_960_720.png" alt="bild på hotel">
+    <img id="banner" src="head-21-questions.png" alt="">
+  </header>
+
+  <nav class="bannernav" id="bannav">
+    <a href="index.html">hem</a>
+    <a class="active" href="boka.html">boka</a>
+    <a href="kontakta.html">kontakta</a>
+    <a href="hitta.html">hitta oss</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+      </a>
+  </nav>
+  <section>
+    <div class="container">
+      <form action="/index.html">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">Förnamn</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="Ditt förnamn...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Efternamn</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Ditt efterman...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="telephone">Telenr</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="telephone" name="telephone" placeholder="Ditt telefonnummer...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="email">Email</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="Din epost...">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label>Rumstyp</label>
+          </div>
+          <div class="col-75">
+            <select id="typeroom" name="typeroom">
+              <option value="enkel">Enkelrum</option>
+              <option value="dubbel">dubbelrum</option>
+              <option value="suit">Svit</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="subject">Övrigt</label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Övrig info..." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Gata var som helst |
+      <a href="https://sites.google.com/site/paulbelfragekurser/guide" target="_blank">länk till sida</a></p>
+
+  </footer>
+  <script>
+
+
+    function myFunction() {
+      var x = document.getElementById("bannav");
+      if (x.className === "bannernav") {
+        x.className += " responsive";
+      } else {
+        x.className = "bannernav";
+      }
+    }
+    </script>
+</body>
+
+</html>
